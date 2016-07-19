@@ -25,8 +25,9 @@ function showChannels(jsonData) {
 
         //Create image
         var channelImage = document.createElement("img");
-        channelImage.style.width = "60em";
-        channelImage.style.height = "20em";
+        channelImage.style.width = "60%";
+        channelImage.style.height = "50%";
+        channelImage.style.margin = "auto";
         channelImage.setAttribute('src', channels[i]._links.backgroundImage.href);
         channelImage.setAttribute('alt', "Image of channel " + channels[i].channel);
 

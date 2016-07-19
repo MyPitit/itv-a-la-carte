@@ -4,7 +4,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-color: #f0f0f0;
+}
 
+/* Navigation Bar */
 nav {
     background-color: #919797;
     height: 5em;
@@ -16,14 +20,59 @@ nav {
     padding-left: 2em;
 }
 
-body {
-    background-color: #f0f0f0;
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 5em;
+    margin-top: 1.4em;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-right: 4em;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+    border: 2px solid #f0f0f0;
+}
+
+/* Home Page */
 #allChannels {
-    
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
 
+/* Footer */
 footer {
     background-color: #242424;
     display: block;

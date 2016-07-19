@@ -11,8 +11,23 @@
     </head>
     <body>
 
+        <!--- Navigation bar source from: http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_right --->
         <nav>
-            <img id="logo" src="public/logo.png"></img>
+            <div class="logo" style="float:left;">
+                <a href="/index.hrml"><img id="logo" src="public/logo.png"></a>
+            </div>
+
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Categories</button>
+                <div class="dropdownContent">
+                    <a href="#">itv</a>
+                    <a href="#">itv2</a>
+                    <a href="#">itvBe</a>
+                    <a href="#">itv3</a>
+                    <a href="#">itv4</a>
+                    <a href="#">CITV</a>
+                </div> <!-- end dropdownContent div --->
+            </div> <!-- end dropdown div --->
         </nav>
 
         <!--- content, list of tiv programmes --->

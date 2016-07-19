@@ -1,11 +1,11 @@
 // XMLHttpRequest
 function getApiContent(url, callback) {
     var xmlhttp = new XMLHttpRequest();
-    console.log("Processant url: " + url);
+    //console.log("Processant url: " + url);
     xmlhttp.onreadystatechange = function() {
-        console.log("Canvi onreadystate: " + xmlhttp.readyState);
+        //console.log("Canvi onreadystate: " + xmlhttp.readyState);
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            console.log("Resposta");
+            //console.log("Resposta");
             callback(JSON.parse(xmlhttp.responseText));
         }
     };
