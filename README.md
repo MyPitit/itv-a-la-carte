@@ -1,6 +1,8 @@
 # itv à la carte
 
-This app is developed using pure vanilla JavaScript, by Mireia Sangalo (@MyPitit).
+This app is developed using pure vanilla JavaScript, by [Mireia Sangalo](http://mireiasangalo.com/) ([@MyPitit](https://github.com/MyPitit)).
+
+Old project presented on 24 of May 2016, click [here](https://github.com/MyPitit/itv-apis) to see the full project.
 
 ## Architecture
 
@@ -60,7 +62,7 @@ Data displayed on `Programmes Page`:
 
 ```
 
-4- **`Navigation Bar`** dropdown menu.
+4 - **`Navigation Bar`** dropdown menu.
 
 On the `navigation bar` will be displayed all the categories, as a quick search of the programmes by type.
 
