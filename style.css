@@ -1,21 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 nav {
     background-color: #919797;
+    height: 5em;
 }
 
 #logo {
-    size: 0.1em;
+    height: 3em;
+    padding-top: 1em;
+    padding-left: 2em;
 }
 
 body {
     background-color: #f0f0f0;
 }
 
-#itvChannel, #itv2Channel, #itv3Channel, #itv4Channel {
-
+#allChannels {
+    
 }
 
 footer {
     background-color: #242424;
     display: block;
     height: 100px;
+}
+
+#pFooter {
+    color: white;
+    padding-top: 2em;
+    padding-left: 2em;
 }
