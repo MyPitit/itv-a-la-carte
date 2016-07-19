@@ -1,0 +1,21 @@
+nav {
+    background-color: #919797;
+}
+
+#logo {
+    size: 0.1em;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+#itvChannel, #itv2Channel, #itv3Channel, #itv4Channel {
+
+}
+
+footer {
+    background-color: #242424;
+    display: block;
+    height: 100px;
+}
