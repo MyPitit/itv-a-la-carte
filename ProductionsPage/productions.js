@@ -30,6 +30,14 @@ function showProductions(jsonData) {
         var title = document.createTextNode(productions[i].programmeTitle);
         productionTitle.appendChild(title);
 
+        //Create image + styling
+        var productionImage = document.createElement("img");
+        productionImage.style.width = "60%";
+        productionImage.style.height = "50%";
+        productionImage.style.margin = "auto";
+        productionImage.setAttribute('src', productions[i]._links.image.href);
+        productionImage.setAttribute('alt', "Image of production " + productions[i].channel);
+
         //Create a <p> tag with the corresponding categories
         var categorieName = document.createElement("p");
         console.log(productionTitle);
@@ -67,17 +75,13 @@ function showProductions(jsonData) {
         var proTotalEpisodes = document.createTextNode(productions[i].numberOfEpisodes);
         programmeTotalEpisodes.appendChild(proTotalEpisodes);
 
-        //Create image + styling
-        var productionImage = document.createElement("img");
-        productionImage.style.width = "60%";
-        productionImage.style.height = "50%";
-        productionImage.style.margin = "auto";
-        productionImage.setAttribute('src', productions[i]._links.image.href);
-        productionImage.setAttribute('alt', "Image of production " + productions[i].channel);
-
 
         //Adding <h1> tag with the programme title
         newDiv.appendChild(productionTitle);
+        //Appending image into <a> tag
+        hRef.appendChild(productionImage);
+        //Adding <a> tag into the <div>
+        newDiv.appendChild(hRef);
         //Adding <p> tag with the corresponding categorie type
         newDiv.appendChild(categorieName);
         //Adding <p> tag with the programme duration
@@ -92,13 +96,6 @@ function showProductions(jsonData) {
         newDiv.appendChild(programmeEpisodes);
         //Adding <p> tag with the total number of episodes
         newDiv.appendChild(programmeTotalEpisodes);
-
-        //Appending image into <a> tag
-        hRef.appendChild(productionImage);
-        //Adding <a> tag into the <div>
-        newDiv.appendChild(hRef);
-
-
 
         //Now that the div is complete, adding to master DOM object
         fullContent.appendChild(newDiv);
