@@ -3,7 +3,7 @@
 // This function builds the content of "Home Page"
 function showChannels(jsonData) {
 
-    //Creating a "var channels" to make the coder more readable
+    //Creating a "var channels" to make the code more readable
     var channels = jsonData._embedded.channels;
 
     //Creating a "createDocumentFragment" in order to inject the content into the "Home Page"
@@ -12,18 +12,18 @@ function showChannels(jsonData) {
     //Loops through the channels
     for (var i = 0; i < channels.length; i++) {
 
-        //Create a new "div"
+        //Create a new "div" + styling
         var newDiv = document.createElement("div");
         newDiv.style.marginLeft = "16em";
 
         //Creating a html link (<a> tag), in order to build the url
         var hRef = document.createElement("a");
         var productionUrl = channels[i]._links.productions.href;
-        //console.log(productionUrl);
+        console.log(productionUrl);
         var productionChannel = getUrlParamsByName("channelId", productionUrl);
-        hRef.setAttribute('href', "channelPage/channel.html?channelid=" + productionChannel);
+        hRef.setAttribute('href', "ProductionPage/production.html?channelid=" + productionChannel);
 
-        //Create image
+        //Create image + styling
         var channelImage = document.createElement("img");
         channelImage.style.width = "60%";
         channelImage.style.height = "50%";
@@ -38,9 +38,9 @@ function showChannels(jsonData) {
 
         //Now that the div is complete, adding to master DOM object
         fullContent.appendChild(newDiv);
-        //console.log(channels[i]);
+        console.log(channels[i]);
     }
     document.getElementById("allChannels").appendChild(fullContent);
 }
 
-getApiContent("http://fetd.prod.cps.awseuwest1.itvcloud.zone/platform/itvonline/samsung/channels?broadcaster=ITV", showChannels);
+getApiContent("http://fetd.prod.cps.awseuwest1.itvcloud.zone/platform/itvonline/samsung/channels?broadcaster=ITV", "application/vnd.itv.default.channel.v1+hal+json; charset=UTF-8", showChannels);

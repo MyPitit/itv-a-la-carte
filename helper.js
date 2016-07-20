@@ -1,5 +1,5 @@
 // XMLHttpRequest
-function getApiContent(url, callback) {
+function getApiContent(url, header, callback) {
     var xmlhttp = new XMLHttpRequest();
     //console.log("Processant url: " + url);
     xmlhttp.onreadystatechange = function() {
@@ -10,7 +10,7 @@ function getApiContent(url, callback) {
         }
     };
     xmlhttp.open("GET", url, true);
-    xmlhttp.setRequestHeader("accept", "application/vnd.itv.default.channel.v1+hal+json; charset=UTF-8");
+    xmlhttp.setRequestHeader("accept", header);
     xmlhttp.send();
 }
 
