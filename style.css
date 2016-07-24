@@ -76,44 +76,59 @@ nav {
     width: 60%;
     padding: 10px;
 }
-/* End Home Page */
 
-/* TV Guide Page */
-#divContent {
+#categorieName {
+
+}
+
+#programmeDuration {
+
+}
+
+#programmeDate {
+
+}
+
+#programeSynopsis {
+
+}
+
+#programmeAvailability {
+    color: red;
+}
+
+#divEpisodeProgramme {
+
+}
+
+#noEpisodes {
+    color: red;
+}
+
+#episodeImage {
     margin: auto;
-    width: 70%;
-    border: 3px solid green;
+    width: 10%;
     padding: 10px;
 }
 
-#tvGuide {
-    display: table;
+#episodeTitle {
+    
 }
 
-#Title {
-    display: table-caption;
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
+/* End Home Page */
+
+/* Productions Page */
+
+/* End Productions Page */
+
+/* Programme Page */
+#productionImage {
+    width: 60%;
+    height: 50%;
+    margin: auto;
 }
 
-#channelLogos {
-    display: table-row;
-    font-weight: bold;
-    text-align: center;
-}
-
-#Row {
-    display: table-row;
-}
-
-#itvLogo, #itv2Logo, #itvBeLogo, #itv3Logo, #itv4Logo, #CTVLogo, #time, #Cell  {
-    display: table-cell;
-    border: solid;
-    border-width: thin;
-    padding-left: 5px;
-    padding-right: 5px;
-}
+/* End Programme Page */
 
 /* Footer */
 footer {
