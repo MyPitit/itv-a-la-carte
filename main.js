@@ -21,7 +21,7 @@ function showChannels(jsonData) {
         var productionUrl = channels[i]._links.productions.href;
         console.log(productionUrl);
         var productionChannel = getUrlParamsByName("channelId", productionUrl);
-        hRef.setAttribute('href', "ProductionPage/production.html?channelid=" + productionChannel);
+        hRef.setAttribute('href', "ProductionsPage/productions.html?channelId=" + productionChannel + "&broadcaster=itv");
 
         //Create image + styling
         var channelImage = document.createElement("img");
@@ -38,7 +38,7 @@ function showChannels(jsonData) {
 
         //Now that the div is complete, adding to master DOM object
         fullContent.appendChild(newDiv);
-        console.log(channels[i]);
+        // console.log(channels[i]);
     }
     document.getElementById("allChannels").appendChild(fullContent);
 }

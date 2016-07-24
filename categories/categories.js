@@ -6,9 +6,6 @@ function showCategories(jsonData) {
     //creating a "var categories" to make the code more readable
     var categories = jsonData._embedded.categories;
 
-    //Creating a "createDocumentFragment" in order to inject the content into the "dropdown menu" from the navigation bar
-    //var fullContent = document.createDocumentFragment();
-
     //Create a new <div> tag
     var newDiv = document.createElement("div");
     newDiv.setAttribute("class", "dropdownContent");

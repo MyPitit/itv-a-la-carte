@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    animation-delay: inherit;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 body {
@@ -64,12 +68,51 @@ nav {
     background-color: transparent;
     border: 2px solid #f0f0f0;
 }
+/* End Navigation Bar */
 
 /* Home Page */
 #allChannels {
     margin: auto;
     width: 60%;
     padding: 10px;
+}
+/* End Home Page */
+
+/* TV Guide Page */
+#divContent {
+    margin: auto;
+    width: 70%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+#tvGuide {
+    display: table;
+}
+
+#Title {
+    display: table-caption;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#channelLogos {
+    display: table-row;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Row {
+    display: table-row;
+}
+
+#itvLogo, #itv2Logo, #itvBeLogo, #itv3Logo, #itv4Logo, #CTVLogo, #time, #Cell  {
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* Footer */
@@ -84,3 +127,4 @@ footer {
     padding-top: 2em;
     padding-left: 2em;
 }
+/* End Footer */
