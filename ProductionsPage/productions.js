@@ -1,6 +1,6 @@
-//"Productions Page" shoing all the "productions" for each Channel
+// "Productions Page" showing all the "productions" for each Channel
 
-//This function builds the content of the "Productions Page"
+// This function builds the content of the "Productions Page"
 function showProductions(jsonData) {
 
     // Creating a "var productions" to make the code more readable
@@ -38,7 +38,7 @@ function showProductions(jsonData) {
             // Render div for program
             // Create a new "div" + styling
             var newDiv = document.createElement("div");
-            newDiv.style.marginLeft = "16em";
+            newDiv.setAttribute("id", "newDivProductions");
 
             // Creating a html link (<a> tag) in order to build the url
             var hRef = document.createElement("a");
@@ -48,26 +48,27 @@ function showProductions(jsonData) {
 
             // Create a new <h1> tag with the title of the programme
             var productionTitle = document.createElement("h1");
+            productionTitle.setAttribute("id", "productionTitle");
             // console.log(productionTitle);
             var title = document.createTextNode(productions[i].programmeTitle);
             productionTitle.appendChild(title);
 
-            // Create image + styling
+            // Create image
             var productionImage = document.createElement("img");
-            productionImage.style.width = "60%";
-            productionImage.style.height = "50%";
-            productionImage.style.margin = "auto";
+            productionImage.setAttribute("id", "productionImage");
             productionImage.setAttribute('src', productions[i]._links.image.href);
             productionImage.setAttribute('alt', "Image of production " + productions[i].channel);
 
             // Create a <p> tag with the corresponding categories
             var categorieName = document.createElement("p");
+            categorieName.setAttribute("id", "categorieNameProduction");
             // console.log(productionTitle);
             var caName = document.createTextNode(productions[i].categories);
             categorieName.appendChild(caName);
 
             //Create a <p> tag with the date
             var programmeDate = document.createElement("p");
+            programmeDate.setAttribute("id", "programmeDateProduction");
             var proDate = document.createTextNode(productions[i].broadcastDateTime.displayFormat);
             programmeDate.appendChild(proDate);
 
@@ -92,7 +93,11 @@ function showProductions(jsonData) {
     }
 
     if (gotContent === false) {
-        // Generate page saying there are no programs available
+        // Generate page saying there are no programmes available
+        var noProgrammes = document.createElement("h1");
+        var noProgrammesText = document.createTextNode("No programmes available.");
+        noProgrammes.appendChild(noProgrammesText);
+        fullContent.appendChild(noProgrammes);
     }
 
     document.getElementById("productions").appendChild(fullContent);

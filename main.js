@@ -9,34 +9,40 @@ function showChannels(jsonData) {
     //Creating a "createDocumentFragment" in order to inject the content into the "Home Page"
     var fullContent = document.createDocumentFragment();
 
-    //Loops through the channels
+    // Loops through the channels
     for (var i = 0; i < channels.length; i++) {
 
-        //Create a new "div" + styling
+        // Create a new "div"
         var newDiv = document.createElement("div");
-        newDiv.style.marginLeft = "16em";
+        newDiv.setAttribute("id", "newDivMain");
 
-        //Creating a html link (<a> tag), in order to build the url
+        // Creating a html link (<a> tag), in order to build the url
         var hRef = document.createElement("a");
         var productionUrl = channels[i]._links.productions.href;
-        console.log(productionUrl);
+        // console.log(productionUrl);
         var productionChannel = getUrlParamsByName("channelId", productionUrl);
         hRef.setAttribute('href', "ProductionsPage/productions.html?channelId=" + productionChannel + "&broadcaster=itv");
 
         //Create image + styling
         var channelImage = document.createElement("img");
-        channelImage.style.width = "60%";
-        channelImage.style.height = "50%";
-        channelImage.style.margin = "auto";
+        channelImage.setAttribute("id", "channelImageMain");
         channelImage.setAttribute('src', channels[i]._links.backgroundImage.href);
         channelImage.setAttribute('alt', "Image of channel " + channels[i].channel);
 
-        //Appending image into <a> tag
+        var getChannelLogos = document.createElement("img");
+        getChannelLogos.setAttribute("id", "channelLogosMain");
+        getChannelLogos.style.height = "3em";
+        getChannelLogos.style.padding = "0.9em";
+        getChannelLogos.setAttribute('src', channels[i]._links.primaryImage.href);
+        // console.log(channels[i]._links.primaryImage.href);
+        newDiv.appendChild(getChannelLogos);
+
+        // Appending image into <a> tag
         hRef.appendChild(channelImage);
-        //Adding <a> tag into the <div>
+        // Adding <a> tag into the <div>
         newDiv.appendChild(hRef);
 
-        //Now that the div is complete, adding to master DOM object
+        // Now that the div is complete, adding to master DOM object
         fullContent.appendChild(newDiv);
         // console.log(channels[i]);
     }
