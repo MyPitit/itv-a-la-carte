@@ -18,7 +18,7 @@ http://fetd.prod.cps.awseuwest1.itvcloud.zone/platform/itvonline/samsung/channel
 
 ```
 
-The channels will be displayed as a list. Each channel will have an `onclick event`.
+The channels will be displayed as a list.
 
 ### Home Page screenshot
 ![cursor_and_itv_a_la_carte](https://cloud.githubusercontent.com/assets/2573931/17107006/639e2690-5285-11e6-910b-b62b359ef938.png)
