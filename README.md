@@ -20,7 +20,10 @@ http://fetd.prod.cps.awseuwest1.itvcloud.zone/platform/itvonline/samsung/channel
 
 The channels will be displayed as a list. Each channel will have an `onclick event`.
 
-2 - **`Channel Page`**: When the user click on one channel in particular, another `HTTP request headers` will be send in order to get the all the corresponding programmes from that channel in particular.
+### Home Page screenshot
+![cursor_and_itv_a_la_carte](https://cloud.githubusercontent.com/assets/2573931/17107006/639e2690-5285-11e6-910b-b62b359ef938.png)
+
+2 - **`Productions Page`**: When the user click on one channel in particular, another `HTTP request headers` will be send in order to get the all the corresponding programmes from that channel in particular.
 
 API for each channel:
 
@@ -45,11 +48,20 @@ http://fetd.prod.cps.awseuwest1.itvcloud.zone/platform/itvonline/samsung/product
 
 ```
 
-3 - **`Programmes Page`**: The user will be able to click any programme and get more information about that programme in particular.
+### Productions Page screenshot
+
+![cursor_and_productions](https://cloud.githubusercontent.com/assets/2573931/17107007/63a32cb2-5285-11e6-9a04-cb13cb3172bd.png)
+
+If there is nothing available on `Prodcutions Page`: 
+
+![cursor_and_productions_1](https://cloud.githubusercontent.com/assets/2573931/17107008/63a481ac-5285-11e6-9768-7b9a51a6e874.png)
+
+
+3 - **`Programme Page`**: The user will be able to click any programme and get more information about that programme in particular.
 
 To being able to access to the programmes, an `HTTP request headers` will be send in order to get all the corresponding data.
 
-Data displayed on `Programmes Page`:
+Data displayed on `Programme Page`:
 
 ```
 "programmeTitle"
@@ -59,27 +71,6 @@ Data displayed on `Programmes Page`:
 "catalogueHierarchyDescription"
 "synopsis"
 "image"
-
-```
-
-4 - **`Navigation Bar`** dropdown menu.
-
-On the `navigation bar` will be displayed all the categories, as a quick search of the programmes by type.
-
-Categories `"name"`:
-
-```
-"Children"
-"Comedy"
-"Drama & Soaps"
-"Entertainment"
-"Factual"
-"Films"
-"News"
-"Sport"
-
-API
-http://fetd.prod.cps.awseuwest1.itvcloud.zone/platform/itvonline/samsung/categories?broadcaster=ITV
 
 ```
 
