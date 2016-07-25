@@ -49,10 +49,6 @@ nav {
     padding-bottom: 25px;
 }
 
-#productionTitle {
-
-}
-
 #productionImage {
     width: 60%;
     height: 50%;
@@ -61,35 +57,61 @@ nav {
 
 #categorieNameProduction {
     color: grey;
-}
-
-#programmeDateProduction {
-
+    font-style: italic;
 }
 
 /* End Productions Page */
 
 /* Programme Page */
+#newDivProgramme {
+    width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+#newDivCurrent {
+    width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
 #allChannels {
     margin: auto;
     width: 60%;
     padding: 10px;
 }
 
-#categorieName {
+#productionTitleProg {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
 
+#episodeTitle {
+    text-decoration: none!important;
+    font-size: smaller;
+}
+
+#categorieName {
+    color: grey;
+    font-style: italic;
 }
 
 #programmeDuration {
-
+    padding-top: 10px;
 }
 
 #programmeDate {
-
+    padding-top: 5px;
 }
 
 #programeSynopsis {
-
+    padding-top: 5px;
 }
 
 #programmeAvailability {
@@ -105,13 +127,29 @@ nav {
 }
 
 #episodeImage {
-    margin: auto;
-    width: 10%;
-    padding: 10px;
+    width: 20%;
+    padding-top: 15px;
 }
 
 #episodeTitle {
+}
 
+#newDivNoProgrammes {
+    background-color: lightgray;
+    height: 400px;
+    width: 800px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#noProgrammesH1 {
+    margin-top: 100px;
 }
 /* End Programme Page */
 

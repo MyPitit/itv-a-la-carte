@@ -93,11 +93,18 @@ function showProductions(jsonData) {
     }
 
     if (gotContent === false) {
+
+        var newDivNoProgrammes = document.createElement("div");
+        newDivNoProgrammes.setAttribute("id", "newDivNoProgrammes");
+
         // Generate page saying there are no programmes available
         var noProgrammes = document.createElement("h1");
+        noProgrammes.setAttribute("id", "noProgrammesH1");
         var noProgrammesText = document.createTextNode("No programmes available.");
         noProgrammes.appendChild(noProgrammesText);
-        fullContent.appendChild(noProgrammes);
+        newDivNoProgrammes.appendChild(noProgrammes);
+
+        fullContent.appendChild(newDivNoProgrammes);
     }
 
     document.getElementById("productions").appendChild(fullContent);
