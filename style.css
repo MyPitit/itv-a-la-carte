@@ -86,6 +86,7 @@ nav {
     padding-top: 15px;
     text-decoration: none!important;
     font-size: smaller;
+    padding-bottom: 10px;
 }
 
 
@@ -132,6 +133,14 @@ nav {
 
 #noEpisodes {
     color: red;
+}
+
+#newDivProgramme {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 15px;
 }
 
 #newDivNoProgrammes {
