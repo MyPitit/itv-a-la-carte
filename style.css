@@ -37,6 +37,7 @@ nav {
 #channelImageMain {
     width: 100%;
 }
+
 /* End Home Page */
 
 /* Productions Page */
@@ -63,14 +64,30 @@ nav {
 /* End Productions Page */
 
 /* Programme Page */
-#newDivProgramme {
+#moreEpisodes {
     width: 640px;
     height: auto;
     margin: 0 auto;
     padding: 10px;
     position: relative;
     padding-bottom: 25px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
+
+#moreEpisodesImage {
+    width: 20%;
+    padding-top: 10px;
+}
+
+#moreEpisodesTitle {
+    width: 70%;
+    padding-top: 15px;
+    text-decoration: none!important;
+    font-size: smaller;
+}
+
 
 #newDivCurrent {
     width: 640px;
@@ -92,11 +109,6 @@ nav {
     padding-bottom: 5px;
 }
 
-#episodeTitle {
-    text-decoration: none!important;
-    font-size: smaller;
-}
-
 #categorieName {
     color: grey;
     font-style: italic;
@@ -115,23 +127,11 @@ nav {
 }
 
 #programmeAvailability {
-    color: red;
-}
-
-#divEpisodeProgramme {
-
+    font-style: red;
 }
 
 #noEpisodes {
     color: red;
-}
-
-#episodeImage {
-    width: 20%;
-    padding-top: 15px;
-}
-
-#episodeTitle {
 }
 
 #newDivNoProgrammes {
@@ -148,9 +148,6 @@ nav {
     text-align: center;
 }
 
-#noProgrammesH1 {
-    margin-top: 100px;
-}
 /* End Programme Page */
 
 /* Footer */

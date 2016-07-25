@@ -21,7 +21,7 @@ function showChannels(jsonData) {
         var productionUrl = channels[i]._links.productions.href;
         // console.log(productionUrl);
         var productionChannel = getUrlParamsByName("channelId", productionUrl);
-        hRef.setAttribute('href', "ProductionsPage/productions.html?channelId=" + productionChannel + "&broadcaster=itv");
+        hRef.setAttribute('href', "ProductionsPage/productions.html?channelId=" + productionChannel);
 
         //Create image + styling
         var channelImage = document.createElement("img");

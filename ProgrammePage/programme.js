@@ -100,10 +100,6 @@ function showOtherEpisodes(jsonData) {
     // Loops through the productions
     for (var i = 0; i < productions.length; i++) {
 
-        // Create a new "div"
-        var newDiv = document.createElement("div");
-        newDiv.setAttribute("id", "newDivProgramme");
-
         // console.log(productions[i]);
         var episodeID = productions[i].episodeId;
         var programmeID = productions[i].programmeId;
@@ -114,29 +110,26 @@ function showOtherEpisodes(jsonData) {
         }
 
         if (myEpisodeId != episodeID && myProgrammeId === programmeID) {
-            console.log(productions[i]);
-            var divEpisodeProgramme = document.createElement("div");
-            divEpisodeProgramme.setAttribute("id", "divEpisodeProgramme");
-            newDiv.appendChild(divEpisodeProgramme);
+            // Create a new "div"
+            var newDiv = document.createElement("div");
+            newDiv.setAttribute("id", "newDivProgramme");
 
             // Create a href link to this episode
             var hRef = document.createElement("a");
             var productionsEpisode = productions[i].episodeId;
             hRef.setAttribute("border", 0);
-            hRef.setAttribute('href', "?channelId=" + myChannelId + "&episodeId=" +  productionsEpisode + "&programmeId=" + myProgrammeId + "&broadcaster=itv");
-            divEpisodeProgramme.appendChild(hRef);
-            newDiv.appendChild(divEpisodeProgramme);
+            hRef.setAttribute('href', "?episodeId=" +  productionsEpisode + "&programmeId=" + myProgrammeId + "&broadcaster=itv");
+            newDiv.appendChild(hRef);
 
             // Get Image for episode
             var episodeImage = document.createElement("img");
-            episodeImage.setAttribute("id", "episodeImage");
+            episodeImage.setAttribute("id", "moreEpisodesImage");
             episodeImage.setAttribute("src", productions[i]._links.image.href);
-            episodeImage.setAttribute("alt", "Image of production " + productions[i].channel);
             hRef.appendChild(episodeImage);
 
             // Get title for episode
-            var episodeTitle = document.createElement("h3");
-            episodeTitle.setAttribute("id", "episodeTitle");
+            var episodeTitle = document.createElement("div");
+            episodeTitle.setAttribute("id", "moreEpisodesTitle");
             var title = document.createTextNode(productions[i].programmeTitle + " " + productions[i].broadcastDateTime.displayFormat);
             episodeTitle.appendChild(title);
             hRef.appendChild(episodeTitle);
@@ -156,11 +149,10 @@ function showOtherEpisodes(jsonData) {
         noEpisodes.appendChild(noEpisodesText);
         fullContent.appendChild(noEpisodes);
     }
-    document.getElementById("programme").appendChild(fullContent);
+    document.getElementById("moreEpisodes").appendChild(fullContent);
 }
 
 // global vars that we capture from querystring
-var myChannelId = getUrlParamsByName("channelId");
 var myEpisodeId = getUrlParamsByName("episodeId");
 var myProgrammeId = getUrlParamsByName("programmeId");
 
