@@ -52,11 +52,6 @@ http://fetd.prod.cps.awseuwest1.itvcloud.zone/platform/itvonline/samsung/product
 
 ![cursor_and_productions](https://cloud.githubusercontent.com/assets/2573931/17107007/63a32cb2-5285-11e6-9a04-cb13cb3172bd.png)
 
-If there is nothing available on `Prodcutions Page`: 
-
-![cursor_and_productions_1](https://cloud.githubusercontent.com/assets/2573931/17107008/63a481ac-5285-11e6-9768-7b9a51a6e874.png)
-
-
 3 - **`Programme Page`**: The user will be able to click any programme and get more information about that programme in particular.
 
 To being able to access to the programmes, an `HTTP request headers` will be send in order to get all the corresponding data.
@@ -73,6 +68,8 @@ Data displayed on `Programme Page`:
 "image"
 
 ```
+### Programme Page screenshot
+![cursor_and_programme](https://cloud.githubusercontent.com/assets/2573931/17143599/bced4700-534b-11e6-8e44-8e702a1fdce2.png)
 
 ## Flow diagram
 ![flow](https://cloud.githubusercontent.com/assets/2573931/16921951/981d0172-4d0b-11e6-9c93-6908b64da297.png)
