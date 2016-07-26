@@ -23,7 +23,7 @@ function showChannels(jsonData) {
         var productionChannel = getUrlParamsByName("channelId", productionUrl);
         hRef.setAttribute('href', "ProductionsPage/productions.html?channelId=" + productionChannel);
 
-        //Create image + styling
+        //Create image
         var channelImage = document.createElement("img");
         channelImage.setAttribute("id", "channelImageMain");
         channelImage.setAttribute('src', channels[i]._links.backgroundImage.href);
