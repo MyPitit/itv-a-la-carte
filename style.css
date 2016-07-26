@@ -26,7 +26,13 @@ nav {
 /* End Navigation Bar */
 
 /* Home Page */
-#newDivMain {
+#allChannels {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+#showChannelsMain {
     width: 640px;
     height: auto;
     margin: 0 auto;
@@ -41,7 +47,7 @@ nav {
 /* End Home Page */
 
 /* Productions Page */
-#newDivProductions {
+#showProductions {
     width: 640px;
     height: auto;
     margin: 0 auto;
@@ -64,45 +70,13 @@ nav {
 /* End Productions Page */
 
 /* Programme Page */
-#moreEpisodes {
+#showCurrentEpisode {
     width: 640px;
     height: auto;
     margin: 0 auto;
     padding: 10px;
     position: relative;
     padding-bottom: 25px;
-    background-color: lightgrey;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-#moreEpisodesImage {
-    width: 20%;
-    padding-top: 10px;
-}
-
-#moreEpisodesTitle {
-    width: 70%;
-    padding-top: 15px;
-    text-decoration: none!important;
-    font-size: smaller;
-    padding-bottom: 10px;
-}
-
-
-#newDivCurrent {
-    width: 640px;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-    padding-bottom: 25px;
-}
-
-#allChannels {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
 }
 
 #productionTitleProg {
@@ -110,7 +84,7 @@ nav {
     padding-bottom: 5px;
 }
 
-#categorieName {
+#categorieNameProgramme {
     color: grey;
     font-style: italic;
 }
@@ -131,11 +105,7 @@ nav {
     font-style: red;
 }
 
-#noEpisodes {
-    color: red;
-}
-
-#newDivProgramme {
+#showOtherEpisodes {
     background-color: #f0f0f0;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -143,18 +113,33 @@ nav {
     padding-left: 15px;
 }
 
-#newDivNoProgrammes {
-    background-color: lightgray;
-    height: 400px;
-    width: 800px;
-    border-radius: 20px;
+#otherEpisodesImage {
+    width: 20%;
+    padding-top: 10px;
+}
+
+#otherEpisodesTitle {
+    width: 70%;
+    padding-top: 15px;
+    text-decoration: none!important;
+    font-size: smaller;
+    padding-bottom: 10px;
+}
+
+#noEpisodes {
+    color: red;
+}
+
+#moreEpisodes {
+    width: 640px;
+    height: auto;
     margin: 0 auto;
-    margin-top: 35px;
-    margin-bottom: 50px;
     padding: 10px;
     position: relative;
     padding-bottom: 25px;
-    text-align: center;
+    background-color: lightgrey;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 /* End Programme Page */

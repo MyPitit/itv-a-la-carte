@@ -14,7 +14,7 @@ function showChannels(jsonData) {
 
         // Create a new "div"
         var newDiv = document.createElement("div");
-        newDiv.setAttribute("id", "newDivMain");
+        newDiv.setAttribute("id", "showChannelsMain");
 
         // Creating a html link (<a> tag), in order to build the url
         var hRef = document.createElement("a");

@@ -24,7 +24,7 @@ function showCurrentEpisode(jsonData) {
 
             // Create a new "div" + styling
             var newDiv = document.createElement("div");
-            newDiv.setAttribute("id", "newDivCurrent");
+            newDiv.setAttribute("id", "showCurrentEpisode");
             // console.log(productions[i]);
 
             // Create a new <h1> tag with the title of the programme
@@ -44,7 +44,7 @@ function showCurrentEpisode(jsonData) {
 
             // Create a <p> tag with the corresponding categories
             var categorieName = document.createElement("p");
-            categorieName.setAttribute("id", "categorieName");
+            categorieName.setAttribute("id", "categorieNameProgramme");
             // console.log(productionTitle);
             var caName = document.createTextNode(productions[i].categories);
             categorieName.appendChild(caName);
@@ -112,7 +112,7 @@ function showOtherEpisodes(jsonData) {
         if (myEpisodeId != episodeID && myProgrammeId === programmeID) {
             // Create a new "div"
             var newDiv = document.createElement("div");
-            newDiv.setAttribute("id", "newDivProgramme");
+            newDiv.setAttribute("id", "showOtherEpisodes");
 
             // Create a href link to this episode
             var hRef = document.createElement("a");
@@ -123,13 +123,13 @@ function showOtherEpisodes(jsonData) {
 
             // Get Image for episode
             var episodeImage = document.createElement("img");
-            episodeImage.setAttribute("id", "moreEpisodesImage");
+            episodeImage.setAttribute("id", "otherEpisodesImage");
             episodeImage.setAttribute("src", productions[i]._links.image.href);
             hRef.appendChild(episodeImage);
 
             // Get title for episode
             var episodeTitle = document.createElement("div");
-            episodeTitle.setAttribute("id", "moreEpisodesTitle");
+            episodeTitle.setAttribute("id", "otherEpisodesTitle");
             var title = document.createTextNode(productions[i].programmeTitle + " " + productions[i].broadcastDateTime.displayFormat);
             episodeTitle.appendChild(title);
             hRef.appendChild(episodeTitle);

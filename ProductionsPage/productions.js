@@ -33,7 +33,7 @@ function showProductions(jsonData) {
         // Render div for program
         // Create a new "div" + styling
         var newDiv = document.createElement("div");
-        newDiv.setAttribute("id", "newDivProductions");
+        newDiv.setAttribute("id", "showProductions");
 
         // Creating a html link (<a> tag) in order to build the url
         var hRef = document.createElement("a");
