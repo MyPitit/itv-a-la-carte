@@ -4,6 +4,9 @@ This app is developed using pure vanilla JavaScript, by [Mireia Sangalo](http://
 
 Old project presented on 24 of May 2016, click [here](https://github.com/MyPitit/itv-apis) to see the full project.
 
+See `itv à la carte` here:
+http://mireiasangalo.com/itv-a-la-carte/
+
 ## Architecture
 
 1 - **`Home Page`**, setting up an `HTTP request headers`.
